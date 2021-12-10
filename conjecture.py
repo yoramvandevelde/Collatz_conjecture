@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Collatz conjecture
 # Seeming randomness in mathematics
 # aka  : 3x+1
