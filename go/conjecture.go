@@ -30,11 +30,11 @@ func main() {
       fmt.Println("\033[1m", num, "\033[0m")
     }
 
+    count++
+    
     if(num == 1) {
       break
     }
-  
-    count++
   }
   
   // print footer

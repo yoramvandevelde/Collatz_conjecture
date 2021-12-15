@@ -18,10 +18,11 @@ while(true) {
     num = (num *3) + 1;
     console.log(util.format("\033[1m%d\033[0m",num));
   }
+  
+  count++;
 
   if(num == 1) {
     console.log(util.format("\nThe number %d reached 1 in %d steps, stopping to not loop forever.\n", startnum, count));
     break;
   }
-  count++;
 }

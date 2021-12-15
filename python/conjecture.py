@@ -19,7 +19,8 @@ while True:
     num = (num * 3) + 1
     print("\033[1m{0}\033[0m".format(num))
   
+  count += 1
+  
   if num == 1:
     print("\nThe number {0} reached 1 in {1} steps, stopping to not loop forever.\n".format(startnum,count))
     break
-  count += 1

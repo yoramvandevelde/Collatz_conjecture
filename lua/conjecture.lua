@@ -19,9 +19,10 @@ while true do
     print(string.format("\027[1m%d\027[0m", num))
   end 
 
+  count = count + 1;
+  
   if num == 1 then
     print(string.format("\nThe number %d reached 1 in %d steps, stopping to not loop forever.\n", startnum, count))
     break
   end
-  count = count + 1;
 end

@@ -19,11 +19,12 @@ while(True) {
     printf("\033[1m%d\033[0m\n", $num);
   }
 
+  $count++;
+  
   if($num == 1) {
     printf("\nThe number %d reached 1 in %d steps, stopping to not loop forever.\n", $startnum, $count);
     break;
   }
-  $count++;
 }
 
 ?>
