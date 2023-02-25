@@ -14,10 +14,10 @@ print("\n=== Collatz conjecture. Using {0} ===".format(num))
 while True:
   if (num % 2) == 0:
     num = num / 2
-    print("\033[91m{0}\033[0m".format(num))
+    print("\033[91m{0}\033[0m".format(int(num)))
   else:
     num = (num * 3) + 1
-    print("\033[1m{0}\033[0m".format(num))
+    print("\033[1m{0}\033[0m".format(int(num)))
   
   count += 1
   
