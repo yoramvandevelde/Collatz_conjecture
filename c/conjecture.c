@@ -22,13 +22,13 @@ int main() {
   
   while(1) {
     if((num % 2) == 0) {
+      num = num / 2;
       sprintf(str, "\033[91m%d\033[0m", num);
       puts(str);
-      num = num / 2;
     } else {
+      num = (num * 3) + 1;
       sprintf(str, "\033[1m%d\033[0m", num);
       puts(str); 
-      num = (num * 3) + 1;
     }
     
     count++;
