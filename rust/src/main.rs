@@ -16,14 +16,14 @@ fn main() {
   
   loop {
     if num % 2 == 0 {
-      num /= 2;
-      
       // Using hexadecimal escape characters because Rust doesn't 
       // support octal escape chars
-      println!("\x1b[91m{}\x1b[0m", num)
+      println!("\x1b[91m{}\x1b[0m", num);
+      
+      num /= 2;
     } else {
+      println!("\x1b[1m{}\x1b[0m", num);
       num = (num * 3) + 1;
-      println!("\x1b[1m{}\x1b[0m", num)
     }
 
     count += 1;
