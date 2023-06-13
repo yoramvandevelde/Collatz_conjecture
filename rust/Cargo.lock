@@ -9,6 +9,13 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
+name = "conjecture"
+version = "0.1.0"
+dependencies = [
+ "rand",
+]
+
+[[package]]
 name = "getrandom"
 version = "0.2.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -56,13 +63,6 @@ version = "0.7.0"
 source = "git+https://github.com/rust-lang-nursery/rand#7c1e649ea1b8074046712e07272d18a3d85bcc71"
 dependencies = [
  "getrandom",
-]
-
-[[package]]
-name = "rust"
-version = "0.1.0"
-dependencies = [
- "rand",
 ]
 
 [[package]]
